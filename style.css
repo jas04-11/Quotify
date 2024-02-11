@@ -1,0 +1,107 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		min-height: 100vh;
+	font-family: 'Libre Baskerville', serif;
+	background-image:url("cover.png") ;
+	background-size: cover;
+	background-position: center ;
+
+}
+
+
+.quote-box{
+	
+
+	width: 500px;
+	min-height: 300px;
+	justify-content: center;
+	background: rgba(255, 255, 255, .2);
+	backdrop-filter: blur(2px);
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 16px;
+
+	/*position:absolute;
+	top: 30%;
+	left: 10%;*/
+
+	padding: 40px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+
+
+
+}
+.quote-box h2{
+	font-size: 28px;
+
+	margin-bottom: 40px;
+	position: relative;
+}
+.quote-box h2::after{
+	content: ' ';
+	width: 90px;
+	height: 3px;
+	border-radius: 3px;
+	background: rgb(23,124,229);
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+
+
+}
+.quote-box blockquote{
+	font-size: 26px;
+	min-height: 100px;
+}
+.quote-box span{
+	display: block;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+.author::before{
+	content: ' - ';
+}
+.quote-box div{
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+
+}
+.quote-box button{
+	background: rgba(255, 255, 255, .1);
+	backdrop-filter: blur(-3px);
+	border: 3px solid rgba(255, 255, 255, .7);
+	border-radius: 25px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:5px;
+	cursor: pointer;
+}
+.bi-whatsapp{
+
+	position: relative;
+	left: -10px;
+	bottom: 1.5px;
+	font-size: 20px;
+
+
+}
